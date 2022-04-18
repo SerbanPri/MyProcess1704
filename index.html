@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MyProcess1704</title>
+    <link rel="stylesheet" href="design/paint.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="box-left">
+        <a href="index.html"><h1>This is my process</h1></a>
+
+        <ul>
+            <li>
+                <a href="real_estate.html">Real Estate</a>
+            </li>
+
+            <li>
+                <a href="investing.html">Investing Portfolio</a>
+            </li>
+
+            <li>
+                <a href="code.html">Programming Languages</a>
+            </li>
+
+            <li>
+                <a href="neuro.html">Neuroscience</a>
+            </li>
+
+            <li>
+                <a href="web3.html">Web 3.0</a>
+            </li>
+
+            <li>
+                <a href="theingredients.html">12 ingrediendts to success</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="box-right">
+        <div class="slide">
+            <img class="mySlides" src="memories/unnamed.gif">
+            
+        </div>
+    </div>
+
+    
+    <div class="clr"></div>
+    
+    
+    <div class="bottom">
+        <div class="box">
+            <a href="https://twitter.com/PrisacaruSerban"><img src="memories/Twitter.jpg"></a>
+        </div>
+        
+        <div class="box">
+            <a href="https://www.linkedin.com/in/serban-prisacaru-0a97121a0/"><img src="memories/likedin.png"></a>
+        </div>
+        
+        <div class="box">
+        <img src="memories/discord.png">
+        <input type="text" value="Șerban#7111" id="myInput">
+    
+        <div class="tooltip">
+            <button onclick="myFunction()" onmouseout="outFunc()">
+              <span class="tooltiptext" id="myTooltip"></span>
+              Copy
+              </button>
+            </div>
+        </div>
+        
+        <div class="box">
+            <img src="memories/matamask.png">
+        <input type="text" value="0x2691FcbA21355AD52a49E0B524Fa1C340F81C410" id="myInput">
+    
+        <div class="tooltip">
+            <button onclick="myFunction()" onmouseout="outFunc()">
+              <span class="tooltiptext" id="myTooltip"></span>
+              Copy
+              </button>
+            </div>
+        </div>
+        
+        
+        <div class="box">
+            <a href="https://www.goodreads.com/user/show/136834463-prisacaru-serban"><img src="memories/goodreads.png"></a>
+        </div>
+        
+        <div class="box">
+            <a href="https://www.fiverr.com/prisacaruserban?up_rollout=true"><img src="memories/fiver.jpg"></a>
+        </div>
+        
+        <div class="box">
+            <a href="https://www.youtube.com/channel/UCFDkei4jz0Nri6cBMRqNNhQ"><img src="memories/yt.jpg"></a>
+        </div>
+        
+        <div class="box">
+            <a href="https://www.instagram.com/myprocess1704/?hl=en"><img src="memories/instagram.webp"></a>
+        </div>
+        </div>
+    
+    
+  
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 10000); // Change image every 2 seconds
+        }
+    </script>
+
+
+</body>
+
+</html>
