@@ -146,6 +146,8 @@ img{
   .prev, .next {
     font-size: 11px
   }
+    body{
+        font-family: Times New Roman;
   *{
     margin: 0;
     padding: 0;
