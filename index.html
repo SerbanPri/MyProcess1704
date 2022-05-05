@@ -51,8 +51,19 @@
     
     <div class="clr"></div>
     
-    
-    <div class="bottom">
+      <div class="bottom">
+       
+        <div class="box">
+        <img src="memories/matamask.png">
+        <div class="tooltip">
+        <button onclick="myFunction()" onmouseout="outFunc()">
+            <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+              Copy text
+        </button>
+        <input type="text" value="0x2691FcbA21355AD52a49E0B524Fa1C340F81C410" id="myInput">
+        </div>
+        </div>
+       
         <div class="box">
             <a href="https://twitter.com/PrisacaruSerban"><img src="memories/Twitter.jpg"></a>
         </div>
@@ -60,31 +71,6 @@
         <div class="box">
             <a href="https://www.linkedin.com/in/serban-prisacaru-0a97121a0/"><img src="memories/likedin.png"></a>
         </div>
-        
-        <div class="box">
-        <img src="memories/discord.png">
-        <input type="text" value="Șerban#7111" id="myInput">
-    
-        <div class="tooltip">
-            <button onclick="myFunction()" onmouseout="outFunc()">
-              <span class="tooltiptext" id="myTooltip"></span>
-              Copy
-              </button>
-            </div>
-        </div>
-        
-        <div class="box">
-            <img src="memories/matamask.png">
-        <input type="text" value="0x2691FcbA21355AD52a49E0B524Fa1C340F81C410" id="myInput">
-    
-        <div class="tooltip">
-            <button onclick="myFunction()" onmouseout="outFunc()">
-              <span class="tooltiptext" id="myTooltip"></span>
-              Copy
-              </button>
-            </div>
-        </div>
-        
         
         <div class="box">
             <a href="https://www.goodreads.com/user/show/136834463-prisacaru-serban"><img src="memories/goodreads.png"></a>
@@ -101,11 +87,11 @@
         <div class="box">
             <a href="https://www.instagram.com/myprocess1704/?hl=en"><img src="memories/instagram.webp"></a>
         </div>
-        </div>
-    
-    
-  
-
+        
+    </div>
+        
+        
+        
     <script>
         var myIndex = 0;
         carousel();
@@ -121,8 +107,22 @@
             x[myIndex - 1].style.display = "block";
             setTimeout(carousel, 10000); // Change image every 2 seconds
         }
-    </script>
+        
+        function myFunction() {
+            var copyText = document.getElementById("myInput");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999);
+                navigator.clipboard.writeText(copyText.value);
+  
+            var tooltip = document.getElementById("myTooltip");
+                tooltip.innerHTML = "Copied: " + copyText.value;
+        }
 
+        function outFunc() {
+            var tooltip = document.getElementById("myTooltip");
+                tooltip.innerHTML = "Copy to clipboard";
+        }
+    </script>
 
 </body>
 
