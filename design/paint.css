@@ -102,13 +102,18 @@ img{
     float: left;
     height: 100px;
     width: 100px;
-    margin: 50px;
+    margin: 100px;
     box-sizing: border-box   
 }
 .box img{
     max-width: 100%;
     height:auto;
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 140px;
