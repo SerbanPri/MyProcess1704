@@ -23,19 +23,23 @@ a{
 a:hover{
   color: deepskyblue;
 }
+img{
+  max-width: 100%;
+  height: auto;
+  padding: 40px;
+}
 .clr{
     clear: both;
 }
 .box-left{
     float: left;
     width: 30%;
+    padding: 10px;
     box-sizing: border-box;
 }
 .box-right{
     float: right;
     width: 70%;
-    margin: auto;
-    padding: 10px;
     box-sizing: border-box;
 }
 .mySlides {
@@ -44,54 +48,43 @@ a:hover{
     height: auto;
 }
 
-
-
-img{
-  max-width: 100%;
-  height: auto;
-  padding: 40px;
-}
-
-
-
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
-  margin-top: -22px;
+  padding: 25px;
+  margin-top: -30px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+.prev {
+  left: 10%;
+}
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+  right: 10%;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: lightgray;
+  opacity: 0.6;
+    
 }
 
 .text {
   color: black;
   font-size: 15px;
   text-align: center;
-  margin-left: 40px;
 }
 
 .bottom{
@@ -148,14 +141,37 @@ img{
   opacity: 1;
 }
 
+
 @media only screen and (max-width: 768px) {
   .prev, .next {
     font-size: 11px
   }
     body{
         font-family: Times New Roman;
-  *{
-    margin: 0;
-    padding: 0;
+        width: 85%;
+    }
+    .box-left{
+        width: 100%;
+        float: none;
+        padding: 0px;
+        margin-bottom: 40px;
+    }
+    .box-right{
+        width: 100%;
+        float: none;
+    }
+    li{
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    ul{
+        padding: 0px;
+    }
+    img{
+        margin: 0px;
+        padding: 0px;
+    }
   }
-}
+}   
+
+
