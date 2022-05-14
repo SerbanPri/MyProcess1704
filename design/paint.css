@@ -42,11 +42,7 @@ img{
     width: 70%;
     box-sizing: border-box;
 }
-.mySlides {
-    display:none;
-    max-width: 100%;
-    height: auto;
-}
+.mySlides {display: none}
 
 .slideshow-container {
   max-width: 1000px;
@@ -141,6 +137,15 @@ img{
   opacity: 1;
 }
 
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
 
 @media only screen and (max-width: 768px) {
   .prev, .next {
